@@ -3,7 +3,7 @@ package lessons
 import "fmt"
 
 const (
-	error = iota
+	err = iota
 	cat
 	dog
 	dragon

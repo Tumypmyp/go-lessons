@@ -1,9 +1,8 @@
 package lessons
 
 import (
+	"errors"
 	"fmt"
-	//_ "github.com/pkg/errors"
-	//"errors"
 )
 
 func Lesson10() {
@@ -71,11 +70,19 @@ func sum3(a int, b int) (result int) {
 	result = a + b
 	return
 }
-
-func divide(a, b float64) (float64, interface{}) {
+func divide(a, b float64) (float64, error) {
 	if b == 0 {
-		return 0, fmt.Errorf("Cannot divide by zero")
+		return 0.0, errors.New("cannot divide through zero")
 	}
 
 	return a / b, nil
 }
+
+//
+//func divide(a, b float64) (float64, err) {
+//	if b == 0 {
+//		return 0, fmt.Errorf("Cannot divide by zero")
+//	}
+//
+//	return a / b, nil
+//}

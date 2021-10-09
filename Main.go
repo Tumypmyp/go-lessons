@@ -38,4 +38,10 @@ func main() {
 	_, _ = c.Println("\nlesson10:")
 	lessons.Lesson10()
 
+	_, _ = c.Println("\nlesson11:")
+	lessons.Lesson11()
+
+	_, _ = c.Println("\nerror example:")
+	lessons.ErrorExample()
+
 }
