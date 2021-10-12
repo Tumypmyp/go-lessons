@@ -1,7 +1,8 @@
 package main
 
 import (
-	"firstProject/lessons"
+	//"./lessons"
+	"github.com/Tumypmyp/go-lessons/lessons"
 	"github.com/fatih/color"
 )
 
@@ -43,5 +44,11 @@ func main() {
 
 	_, _ = c.Println("\nerror example:")
 	lessons.ErrorExample()
+
+	_, _ = c.Println("\nlesson12:")
+	lessons.Lesson12()
+
+	_, _ = c.Println("\nlesson13:")
+	lessons.Lesson13()
 
 }
